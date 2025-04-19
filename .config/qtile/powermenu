@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+chosen=$(printf "⏻\n\n󰒲\n" |  rofi -dmenu -theme ~/.config/rofi/power.rasi)
+
+case "$chosen" in
+  "⏻") poweroff ;;
+  "") reboot ;;
+  "󰒲") slock ;;
+  "") qtile cmd-obj -o cmd -f shutdown ;;
+  *) exit 1 ;;
+esac
