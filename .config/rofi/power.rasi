@@ -1,0 +1,56 @@
+configuration {
+  font: "JetBrainsMono Nerd Font Medium 50";
+}
+
+
+* {
+  bg: #232534;
+  bg-alt: #585b7066;
+  bg-selected: #232534;
+
+  fg: #7aa2f7;
+  fg-alt: #7f849c;
+  
+  border: 0;
+  margin:0;
+  padding: 0;
+  spacing: 0;
+  background-color: @bg;
+}
+
+window {
+  width: 5%;
+  background-color: @bg;
+  border: 2px;
+  border-radius: 10px;
+  border-color: @fg;
+  x-offset: 900px; //for 1920x1080 screen
+}
+
+element {
+  //background-color: transparent;
+  text-color: @fg-alt;
+}
+
+element selected {
+  text-color: @fg;
+  background-color: @bg-selected;
+}
+
+element-text {
+  //background-color: transparent;
+  text-color: inherit;
+  horizontal-align: 0.10;
+}
+
+
+listview {
+  background-color: @bg;
+  columns: 1;
+  lines: 4;
+}
+
+mainbox {
+  children: [listview];
+  background-color: @bg;
+}
