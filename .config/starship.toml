@@ -1,0 +1,37 @@
+format = """
+$username\
+$hostname\
+$directory\
+$cmd_duration
+$character
+"""
+
+[username]
+style_user = "#ca9ee6"
+style_root = "#ea999c"
+format = "[$user](bold #ca9ee6) on "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '[$hostname](bold #81c8be) '
+trim_at = "."
+disabled = false
+
+[character]
+success_symbol = "[](bold #e6c890)"
+error_symbol = "[✗](bold red)"
+
+[directory]
+read_only = " "
+truncation_length = 10
+truncate_to_repo = true
+style = "bold italic #689d6a"
+format = '[$path]($style)[$read_only]($read_only_style) '
+
+[cmd_duration]
+min_time = 4
+show_milliseconds = false
+disabled = false
+style = "bold italic red"
