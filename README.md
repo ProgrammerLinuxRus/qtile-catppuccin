@@ -7,3 +7,5 @@
 + python-contrib
 + picom
 + nitrogen
++ alacritty
++ starship prompt
