@@ -30,8 +30,8 @@ from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 import os
 import subprocess
-from qtile_extras import widget
-from qtile_extras.widget.decorations import BorderDecoration, RectDecoration
+#from qtile_extras import widget
+#from qtile_extras.widget.decorations import BorderDecoration, RectDecoration
 
 
 power = os.path.expanduser('~/.config/qtile/powermenu')
