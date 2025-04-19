@@ -1,0 +1,7 @@
+
+[window.padding]
+x = 12
+y = 0
+[colors.primary]
+background = '#1e1f2e'# base
+
